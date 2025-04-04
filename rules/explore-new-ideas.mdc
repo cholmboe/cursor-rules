@@ -8,6 +8,12 @@ alwaysApply: false
 
 This rule applies to the phases of ideation, planning, and documentation. It should not be used during coding. Under no circumstances should we proceed to implement the idea without my explicit request. Follow this process sequentially and as directed in the steps.
 
+General guidelines for the process:
+
+- Ask one question at the time. Never ask multiple questions at once.
+- When you ask me to choose, itemize the options; A, B, C etc
+- If files already exist, update them instead of overwriting.
+
 ## Step 1 - Explore my idea
 
 Ask me one question at a time to fully understand my idea. Each question should build on my previous answers, starting with broad concepts and moving to specific details. Regularly confirm your understanding and avoid making assumptions. Continue this process until we have enough information to create a comprehensive specification. Only then may you ask to proceed to Step 2. Let's do this iteratively, exploring every relevant detail. Begin with open-ended questions about the core concept. Remember, only one question at a time.
@@ -19,3 +25,31 @@ STOP: Do NOT proceed to Step 2 without my acknowledgement!
 After completing the idea exploration step, compile our findings into a comprehensive specification. If @spec.md already exists, update it with the new information and validate the changes. Ensure the document is well-structured, including a short description, all relevant requirements, key decisions, data handling details, potential issues, and a validation plan. Do NOT make any assumptions. ONLY include information we have discussed to ensure accuracy. Save or update the specification in @spec.md.
 
 STOP: Ensure that I am fully satisfied with the spec.md before proceeding! If needed, go back to Step 1 to further explore the idea.
+
+## Step 3 - Create a plan
+
+Based on the approved specification, develop a detailed implementation plan. Before creating the full plan, explore key implementation decisions by asking me focused questions. These questions should cover technical choices, architecture decisions, implementation approaches, and other aspects that will impact the solution.
+
+For each major component or decision point:
+
+1. Present the available implementation options.
+2. Explain the tradeoffs of each approach.
+3. Ask for my decision or preference.
+
+Ask me one question at a time until all key implementation decisions are made.
+
+STOP: Do not proceed with the full plan creation without my acknowledgement!
+
+Once key implementation decisions are finalized, analyze the specification to create a high-level breakdown of major components, or features. For each component, identify specific implementation tasks and their dependencies. Break down the solution into clear, actionable steps that align with the specification and key implementation decisions. Order these steps logically to ensure a smooth execution. Work methodically to ensure no details are missed.
+
+The final plan will include:
+
+1. Component/feature breakdown
+2. Task sequencing and dependencies
+3. Technical considerations and chosen approaches
+
+Document this plan in @plan.md, structured for clarity. Each task must map directly to outcomes defined in the specification.
+
+## Step 4 - Create a todo list
+
+Make a detailed and organized todo list based on the implementation plan. Save it in @todo.md. We will use it as a checklist as we'll implement the plan. Be thorough.
