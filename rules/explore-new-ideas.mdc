@@ -1,0 +1,217 @@
+---
+description: Guidelines for exploring new project ideas and improving existing specifications
+globs: 
+alwaysApply: false
+---
+
+# Project Idea Exploration and Refinement Process
+
+This rule provides a structured approach for:
+
+- Exploring and planning new project ideas
+- Refining and improving existing specifications
+- Expanding current project plans
+- Updating implementation details
+
+It should be used during the initial planning phase or when significant improvements to existing plans are needed, not during active implementation.
+
+## Process Overview
+
+- Follow each step sequentially
+- Confirm with the user before proceeding to the next step
+- Document decisions and insights throughout the process
+- Maintain focus on understanding before implementation
+- When improving existing items, review current state before making changes
+- Ensure backwards compatibility with existing plans when applicable
+
+## Step 1: Idea Exploration
+
+### Initial Assessment
+
+- Determine if this is a new idea or improvement to existing feature
+- For existing features:
+  - Review current documentation
+  - Identify areas needing improvement
+  - Understand existing constraints
+  - Note dependencies on other features
+- For new ideas:
+  - Start with blank slate exploration
+  - Consider integration points with existing features
+
+### Guidelines
+
+- Ask one focused question at a time
+- Build each question upon previous answers
+- Progress from broad concepts to specific details
+- Validate understanding regularly
+- Document key insights and decisions
+
+### Question Framework
+
+- Start with open-ended questions about core concept
+- Follow up with questions about:
+  - Primary goals and objectives
+  - Target users or audience
+  - Expected outcomes
+  - Success criteria
+  - Potential challenges
+  - Integration with existing features
+- Continue until sufficient information is gathered for specification
+
+### Exit Criteria
+
+- Clear understanding of core concept
+- Defined scope and boundaries
+- Identified key requirements
+- Sufficient context for specification creation
+- For improvements: clear understanding of current state and needed changes
+- For new features: clear understanding of core concept and requirements
+
+## Step 2: Specification Development
+
+### Initial Actions
+
+- Review existing `spec.md` for:
+  - Related features or overlapping functionality
+  - Areas needing updates or clarification
+  - Integration points with new features
+  - Potential impacts on existing specifications
+- Identify if changes are:
+  - Additive (new features)
+  - Modifications (improving existing features)
+  - Both (expanding existing features with new capabilities)
+
+### Content Requirements
+
+- List high-level features
+- Define key capabilities
+- Document focus areas
+- Capture essential functionality
+- Outline scope boundaries
+- Record critical requirements
+
+### Documentation Process
+
+- Update `spec.md` with:
+  - New findings for new features
+  - Refined specifications for existing features
+  - Clear marking of modified sections
+  - Version history of significant changes
+- Focus on intent and outcomes
+- Avoid implementation details
+- Group related requirements
+- Maintain clear organization
+- Present each section to user for validation
+- Incorporate user feedback iteratively
+
+### Exit Criteria
+
+- User has reviewed and approved all specifications
+- All requirements are clearly documented
+- Dependencies and relationships are identified
+- Scope is well-defined and agreed upon
+- Any open questions or uncertainties are resolved
+- User confirms specification completeness
+- Changes to existing specifications are clearly marked
+- Impact on existing features is documented
+- Version history is updated if applicable
+
+## Step 3: Implementation Planning
+
+### Planning Process
+
+- For existing plans:
+  - Review current implementation steps
+  - Identify areas needing updates
+  - Ensure compatibility with existing work
+  - Consider impact on ongoing development
+- For new features:
+  - Create detailed implementation blueprint
+  - Break down into iterative chunks
+  - Refine chunks into smaller steps
+- Ensure all steps are:
+  - Small enough for safe implementation
+  - Large enough for meaningful progress
+  - Testable and verifiable
+  - Logically sequenced
+
+### Documentation
+
+- Update `plan.md` with implementation steps
+- Include dependencies between steps
+- Note testing requirements
+- Document success criteria for each step
+- Review each section with user
+- Adjust based on user feedback
+- Clearly mark updates to existing plans
+- Document impact on existing timelines
+- Note any changes to dependencies
+
+### Exit Criteria
+
+- User has reviewed and approved the implementation plan
+- All steps are clearly defined and sized appropriately
+- Dependencies are identified and documented
+- Testing approach is agreed upon
+- Resource requirements are understood
+- Timeline expectations are aligned
+- User confirms plan feasibility
+- Changes to existing plans are clearly documented
+- Impact on current development is understood
+- Integration points are identified and planned
+
+## Step 4: Task Creation
+
+### Todo List Development
+
+- For existing tasks:
+  - Review current todo items
+  - Update or modify as needed
+  - Maintain consistency with existing priorities
+- For new tasks:
+  - Create specific, actionable items
+  - Focus on measurable outcomes
+- For all tasks:
+  - Include acceptance criteria
+  - Note dependencies
+  - Specify testing requirements
+
+### Documentation
+
+- Update `todo.md` with new tasks
+- Maintain clear prioritization
+- Include estimated complexity
+- Note dependencies between tasks
+- Ensure traceability to plan
+- Review tasks with user
+- Adjust based on feedback
+- Clearly mark modified or updated tasks
+- Maintain consistency with existing todo items
+- Update priority ordering as needed
+
+### Exit Criteria
+
+- User has reviewed and approved all tasks
+- Tasks are specific and actionable
+- Priorities are clearly defined
+- Dependencies are properly mapped
+- Complexity estimates are agreed upon
+- Success criteria are established for each task
+- User confirms todo list completeness
+- Changes to existing tasks are clearly marked
+- Priority adjustments are documented and approved
+- Integration with existing workflow is clear
+
+### Important Notes
+
+- This is an interactive, collaborative process
+- Proceed step by step, waiting for user confirmation
+- Ask clarifying questions when needed
+- Validate understanding frequently
+- Be responsive to user feedback and concerns
+- Don't move forward until current step is fully understood and approved
+- Document decisions and rationale throughout the process
+- When modifying existing items, ensure changes are compatible
+- Document rationale for changes to existing specifications
+- Consider impact on ongoing work
+- Maintain historical context where valuable

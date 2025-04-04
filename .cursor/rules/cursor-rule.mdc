@@ -1,0 +1,87 @@
+---
+description: Guidelines for creating consistent and effective Cursor rules files (*.mdc).
+globs:
+alwaysApply: false
+---
+
+# Cursor Rules Creation Guidelines
+
+## File Structure
+
+- Start every file with YAML frontmatter between triple dashes
+- Include a clear description in the frontmatter that explains the rules' purpose
+- Add relevant glob patterns to specify which files the rules apply to
+- Use `.mdc` extension for all rules files
+- Place rules files in the appropriate directory structure
+
+## Content Organization
+
+- Begin with an H1 (#) title that clearly states the topic
+- Divide content into logical H2 (##) sections
+- Order sections from fundamental to advanced concepts
+- Keep related rules together within the same section
+- Maintain consistent spacing between sections
+
+## Rule Writing Style
+
+- Write each rule as a bullet point using single hyphens
+- Start rules with action verbs when possible
+- Make rules specific and actionable
+- Keep rules concise and focused
+- Use consistent punctuation at the end of each rule
+
+## Rule Content Quality
+
+- Ensure each rule provides clear guidance
+- Avoid vague or ambiguous statements
+- Include both high-level principles and specific details
+- Make rules practical and implementable
+- Cover both what to do and what to avoid
+
+## Technical Specifications
+
+- Define language-specific rules when necessary
+- Include framework-specific guidelines where applicable
+- Specify version requirements when relevant
+- Reference official documentation where appropriate
+- Include code patterns and anti-patterns when helpful
+
+## Documentation Standards
+
+- Use proper markdown formatting
+- Maintain consistent indentation
+- Include examples for complex rules
+- Link to related rule sets when applicable
+- Keep formatting consistent across all rule files
+
+## Maintenance Guidelines
+
+- Review and update rules regularly
+- Remove outdated guidelines
+- Add new best practices as they emerge
+- Maintain backwards compatibility when possible
+- Version rules appropriately
+
+## Rule Validation
+
+- Verify rules against current best practices
+- Test rules in real-world scenarios
+- Ensure rules don't conflict with each other
+- Validate glob patterns for accuracy
+- Check for completeness in coverage
+
+## Collaboration Standards
+
+- Follow consistent naming conventions for files
+- Include clear change documentation
+- Maintain a changelog when appropriate
+- Allow for community contributions
+- Provide clear contribution guidelines
+
+## Implementation Guidance
+
+- Include setup instructions when needed
+- Specify required tools or dependencies
+- Provide migration guidelines for major changes
+- Document any required configuration
+- Include troubleshooting guidance
