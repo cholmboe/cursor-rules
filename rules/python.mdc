@@ -1,5 +1,5 @@
 ---
-description: Python best practices and patterns for modern software development with Flask and SQLite
+description: Python best practices and patterns for modern software development
 globs: **/*.py, src/**/*.py, tests/**/*.py
 ---
 
@@ -10,19 +10,19 @@ globs: **/*.py, src/**/*.py, tests/**/*.py
 - Use src-layout with `src/your_package_name/`
 - Place tests in `tests/` directory parallel to `src/`
 - Keep configuration in `config/` or as environment variables
-- Store requirements in `requirements.txt` or `pyproject.toml`
-- Place static files in `static/` directory
-- Use `templates/` for Jinja2 templates
+- Use dependency management file for project dependencies
+- Use `data/` for data files
+- Separate CLI scripts into `scripts/` or `bin/`
 
 ## Code Style
 
-- Follow Black code formatting
-- Use isort for import sorting
+- Follow consistent code formatting
+- Use consistent import sorting
 - Follow PEP 8 naming conventions:
   - snake_case for functions and variables
   - PascalCase for classes
   - UPPER_CASE for constants
-- Maximum line length of 88 characters (Black default)
+- Use reasonable line length limits
 - Use absolute imports over relative imports
 
 ## Type Hints
@@ -34,67 +34,40 @@ globs: **/*.py, src/**/*.py, tests/**/*.py
 - Define custom types in `types.py`
 - Use `Protocol` for duck typing
 
-## Flask Structure
+## Application Structure
 
-- Use Flask factory pattern
-- Organize routes using Blueprints
-- Use Flask-SQLAlchemy for database
+- Use dependency injection pattern
+- Implement proper separation of concerns
+- Follow SOLID principles
+- Use appropriate data modeling
 - Implement proper error handlers
-- Use Flask-Login for authentication
-- Structure views with proper separation of concerns
-
-## Database
-
-- Use SQLAlchemy ORM
-- Implement database migrations with Alembic
-- Use proper connection pooling
-- Define models in separate modules
-- Implement proper relationships
-- Use proper indexing strategies
-
-## Authentication
-
-- Use Flask-Login for session management
-- Implement Google OAuth using Flask-OAuth
-- Hash passwords with bcrypt
-- Use proper session security
-- Implement CSRF protection
-- Use proper role-based access control
-
-## API Design
-
-- Use Flask-RESTful for REST APIs
-- Implement proper request validation
-- Use proper HTTP status codes
-- Handle errors consistently
-- Use proper response formats
-- Implement proper rate limiting
+- Structure code into logical modules
 
 ## Testing
 
-- Use pytest for testing
-- Write tests for all routes
-- Use pytest-cov for coverage
-- Implement proper fixtures
-- Use proper mocking with pytest-mock
+- Write comprehensive unit tests
+- Maintain good test coverage
+- Create reusable test fixtures
+- Use appropriate mocking strategies
 - Test all error scenarios
+- Include property-based testing where appropriate
 
 ## Security
 
-- Use HTTPS in production
-- Implement proper CORS
-- Sanitize all user inputs
-- Use proper session configuration
+- Use proper secrets management
+- Sanitize all inputs
 - Implement proper logging
-- Follow OWASP guidelines
+- Follow security best practices
+- Use proper encryption/hashing when needed
+- Regular security updates
 
 ## Performance
 
-- Use proper caching with Flask-Caching
-- Implement database query optimization
-- Use proper connection pooling
-- Implement proper pagination
-- Use background tasks for heavy operations
+- Use appropriate profiling techniques
+- Implement caching where needed
+- Use generators for large datasets
+- Implement proper memory management
+- Use appropriate concurrency patterns
 - Monitor application performance
 
 ## Error Handling
@@ -102,33 +75,35 @@ globs: **/*.py, src/**/*.py, tests/**/*.py
 - Create custom exception classes
 - Use proper try-except blocks
 - Implement proper logging
-- Return proper error responses
 - Handle edge cases properly
-- Use proper error messages
+- Use descriptive error messages
+- Follow exception hierarchy best practices
 
 ## Documentation
 
-- Use Google-style docstrings
+- Use consistent docstring format
 - Document all public APIs
 - Keep README.md updated
 - Use proper inline comments
 - Generate API documentation
 - Document environment setup
+- Include usage examples
 
 ## Development Workflow
 
-- Use virtual environments (venv)
-- Implement pre-commit hooks
-- Use proper Git workflow
+- Use virtual environments
+- Use version control
 - Follow semantic versioning
-- Use proper CI/CD practices
+- Use continuous integration
 - Implement proper logging
+- Use static type checking
+- Use code linting
 
 ## Dependencies
 
 - Pin dependency versions
-- Use requirements.txt for production
+- Use appropriate dependency management
 - Separate dev dependencies
-- Use proper package versions
+- Use stable package versions
 - Regularly update dependencies
 - Check for security vulnerabilities
