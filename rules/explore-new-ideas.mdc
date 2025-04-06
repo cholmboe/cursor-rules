@@ -22,7 +22,7 @@ STOP: Do NOT proceed to Step 2 without my acknowledgement!
 
 ## Step 2 - Create a specification
 
-After completing the idea exploration step, compile our findings into a comprehensive specification. If @spec.md already exists, update it with the new information and validate the changes. Ensure the document is well-structured, including a short description, all relevant requirements, key decisions, data handling details, potential issues, and a validation plan. Do NOT make any assumptions. ONLY include information we have discussed to ensure accuracy. Save or update the specification in @spec.md.
+After completing the idea exploration step, compile our findings into a comprehensive specification. If @spec.md already exists, update it with the new information and validate the changes. Ensure the document is well-structured, including a short description, all relevant requirements, key decisions, data handling details, potential issues, and future feature ideas. Do NOT make any assumptions. ONLY include information we have discussed to ensure accuracy. Save or update the specification in @spec.md.
 
 STOP: Ensure that I am fully satisfied with the spec.md before proceeding! If needed, go back to Step 1 to further explore the idea.
 
