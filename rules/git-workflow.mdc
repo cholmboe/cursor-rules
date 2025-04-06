@@ -1,0 +1,91 @@
+---
+description: Guidelines for managing Git workflow with task-based branches, iterative commits, and clean merging strategy.
+globs:
+alwaysApply: true
+---
+
+# Git Workflow Guidelines
+
+## Description
+
+These guidelines describe how I'd like us to collaborate on Git-related tasks during our pair programming sessions. When we begin a new task, you'll help me create a dedicated branch. As we work, we'll commit changes incrementally. Once we're happy with the result, we'll clean up and merge it properly into the base branch.
+
+## General guidelines
+
+- Always check in with me before taking action.
+- Look in @todo.md, @plan.md and @spec.md if they exist for task priorities and requirements.
+
+## **Action: Starting a new task**
+
+### When to Initiate
+
+- When I ask to begin a new major coding task
+- When we are ready to proceed with the next major item on our to-do list
+
+### Actions to Take
+
+- Create a new branch specifically for the new task.
+- Select a clear and descriptive name that effectively conveys the task's purpose.
+
+## **Action: Incremental Commits**
+
+Make frequent, meaningful commits that focus on logical units of work.
+
+### When to Initiate
+
+- Suggest a commit when you see positive feedback from me like:
+  - "This is great!"
+  - "Good job, I like this"
+  - "That looks perfect"
+  - "Yes, that's what I wanted"
+- Also suggest a commit when we mark a `todo` item as done.
+- Use your judgment — context matters.
+
+### Actions to Take
+
+- Include only recent and relevant changes.
+- The commit message should:
+  - Be a single subject line, under 80 characters.
+  - Clearly convey the purpose of the change.
+  - Use the imperative mood: "Fix bug" not "Fixed bug."
+  - Follow the format `<type>(<scope>): <short description>`.
+    - Types:
+        feat: new feature
+        fix: bug fix
+        refactor: code change that neither fixes a bug nor adds a feature
+        test: adding or correcting tests
+        docs: documentation only
+        style: formatting, missing semicolons, etc.
+        perf: performance improvements
+        chore: build process or auxiliary tool changes
+        ci: changes to CI configuration
+
+## **Action: Finishing the Task**
+
+### When to Initiate
+
+- Help me merge the changes into the base branch once I confirm that we have completed the task.
+- Suggest to merge the changes when all related `todo` items are done.
+- Use your discretion based on the situation.
+
+### Actions to Take
+
+- Rebase the feature branch onto the latest base branch so we're up to date.
+- Squash the branch's commits into a single merge commit.
+- The commit message should:
+  - Have a subject line under 80 characters.
+  - Clearly convey the purpose of the task.
+  - The body should list all original messages from the squashed commits
+  - Use the imperative mood: "Fix bug" not "Fixed bug."
+  - Follow the format `<type>(<scope>): <short description>\n\n<body>`.
+    - Types:
+        feat: new feature
+        fix: bug fix
+        refactor: code change that neither fixes a bug nor adds a feature
+        test: adding or correcting tests
+        docs: documentation only
+        style: formatting, missing semicolons, etc.
+        perf: performance improvements
+        chore: build process or auxiliary tool changes
+        ci: changes to CI configuration
+- Use a fast-forward merge to bring changes into the base branch.
